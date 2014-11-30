@@ -1,85 +1,200 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" ng-app="ihs">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Avant</title>
-<!-- SET: FAVICON -->
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-<!-- END: FAVICON -->
-<!-- SET: STYLESHEET -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- END: STYLESHEET -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Institute of Health Systems</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/ihs.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
+
 <body>
-<!-- wrapper starts -->
-<div class="wrapper"> 
-  <!-- main Starts -->
-  <div class="main"> 
-    <!-- Header Starts -->
-    <div class="header">
-      <div class="logo flt_lt">
-        <h1><a href="#">Avant</a></h1>
-        <p>Your slogan goes here</p>
-      </div>
-      <div class="header_right flt_rt">
-        <ul>
-          <li><a href="#"><img src="images/twitter-logo.png" width="16" height="16" alt="twitter" class="img" /><span>twitter</span></a></li>
-          <li><a href="#"><img src="images/fb-logo.png" width="16" height="16" alt="facebook" class="img"  /><span>facebook</span></a></li>
-        </ul>
-        <div class="clear"></div>
-      </div>
-      <div class="clear"></div>
-      <div id="nav">
-        <ul>
-          <li><a href="#">HOME </a></li>
-          <li><a href="#">ABOUT US </a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">PRODUCTS</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT US</a></li>
-        </ul>
-        <div class="clear"></div>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="clear"></div>
-    <!-- Header ends --> 
-    <!-- content Starts -->
-    <div class="content">
-      <div class="banner">
-        <div class="banner_text">
-          <h2>We value our customers</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam ligula, egestas eget rhoncus vel, hendrerit in sem. Vivamus laoreet erat sit amet ante ullamcorper vestibulum. Duis porta, nisl sed cursus volutpat, est nulla placerat mauris, id viverra leo ante sed leo. Vivamus fermentum dignissim sem, quis pellentesque dolor posuere vel. In vitae lorem ligula, a congue nibh.</p>
-          <a href="#">Read more</a></div>
-        <a href="#"><img src="images/banner.jpg" width="940" height="344" alt="banner img" /></a></div>
-      <div class="content1">
-        <div class="content1_box1 flt_lt">
-          <h2>Welcome to our company</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet. <a href="#">Read More</a></p>
-          <h3>What we do</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Cum sociis natoque penatibus. <a href="#">Read more</a></p>
-          <h3>Why choose us?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <a href="#">Read more</a></p>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-brand-ihs" href="#/home">
+                    <img src="images/IHSLogo.jpg" alt="IHS logo" id="ihslogo">
+                    <span style="display: block" id="ihs-logo-text">Institute of Health Systems</span>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#/about">About</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Academy & Training</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Research & Consultancy</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Water Quality Lab</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Resources</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">Publications</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Reports</a></li>
+                            <li><a href="#">Working Papers</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Datasets</a></li>
+                            <li><a href="#">Complete List of IHS Publications</a></li>
+                            <li><a href="#">Publications arising from Work or People at IHS</a></li>
+                            <li><a href="#">How to Order</a></li>
+                            <li><a href="#">Free Downloads</a></li>
+                        </ul>
+                    </li>
+                    <!--<li>
+                        <a href="services.html">Services</a>
+                    </li>-->
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="content1_box2 flt_lt">
-          <h2>Consulting Services</h2>
-          <div class="content1_box2_img"><a href="#"><img src="images/img1.jpg" width="440" height="110" alt="img" /></a></div>
-          <p>Pellentesque diam ligula, egestas eget rhoncus vel, hendrerit in sem. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. <a href="#">Read More</a></p>
-          <h2>Analysis Services</h2>
-          <div class="content1_box2_img"><a href="#"><img src="images/img2.jpg" width="440" height="110" alt="img" /></a></div>
-          <p>Pellentesque diam ligula, egestas eget rhoncus vel, hendrerit in sem. Viva mus laoreet erat sit amet ante ullamcorper vestibulum. <a href="#">Read More</a></p>
+        <!-- /.container -->
+    </nav>
+    <div class="row" style="margin-top: 40px;">
+        <div ng-view></div>
+        <div id="bodydiv" class="row">
+         
         </div>
-        <div class="clear"></div>
-      </div>
     </div>
-    <div class="clear"></div>
-    <!-- content ends -->
-    <div class="footer">
-      <p>Copyright © 2013 WebsiteName. All rights reserved. Design by <a href="http://www.templategarden.com" target="_blank" rel="nofollow">TemplateGarden</a></p>
-    </div>
-  </div>
-  <!-- main ends --> 
-</div>
-<!-- wrapper ends -->
+       <!-- /.row -->
+
+        <!-- Features Section 
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Modern Business Features</h2>
+            </div>
+            <div class="col-md-6">
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li><strong>Bootstrap v3.2.0</strong>
+                    </li>
+                    <li>jQuery v1.11.0</li>
+                    <li>Font Awesome v4.1.0</li>
+                    <li>Working PHP contact form with validation</li>
+                    <li>Unstyled page elements for easy customization</li>
+                    <li>17 HTML pages</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+            </div>
+        </div>-->
+        <!-- /.row -->
+
+        
+
+        <!-- Call to Action Section
+        <hr>
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                </div>
+            </div>
+        </div>-->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/angular.min.js"></script>
+    
+    <script src="js/angular-route.js"></script>
+    
+    <script src="js/ihs.js"></script>
+
+    
+
 </body>
+
 </html>
