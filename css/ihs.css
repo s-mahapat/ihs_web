@@ -9,10 +9,11 @@
 html,
 body {
     height: 100%;
+    background-color: #F4F4F4;
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -92,9 +93,28 @@ footer {
     }
 }
 
+/*.navbar{
+    height: 85px;
+    border-color: white;
+    border-bottom-width: 2px;
+    border-style: solid;
+}*/
+
+.navbar-default{
+    margin-top: 10px;
+}
+
+#ihs_container{
+    margin-top: 20px;
+    background-color: white;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
 #ihslogo{
     width: 70px;
-    height: 55px;  
+    height: 55px;
+    opacity: 1.0;
 }
 
 #ihs-logo-text{
