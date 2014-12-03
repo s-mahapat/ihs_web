@@ -10,10 +10,16 @@ var ihsApp = angular.module('ihs', ['ngRoute']);
 //'ngResource', 'datatables',
 //'patientControllers', 'ivory.services', 'searchControllers',
 // 'errorControllers' 
-ihsApp.config(function($routeProvider) {
-	$routeProvider.when('/home', {
-		templateUrl : 'partials/home.html'
-	}).when('/about', {
-            templateUrl : 'partials/about.html'
-        }).otherwise('/home');
-        });
+ihsApp.config(function ($routeProvider) {
+    $routeProvider.when('/home', {
+        templateUrl: 'partials/home.html'
+    }).when('/about', {
+        templateUrl: 'partials/about.html'
+    }).when('/about/mission', {
+        templateUrl: 'partials/mission.html'
+    }).when('/about/vision', {
+        templateUrl: 'partials/vision.html'
+    }).when('/about/orgstructure', {
+        templateUrl: 'partials/orgstructure.html'
+    }).otherwise('/home');
+});
