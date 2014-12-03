@@ -136,6 +136,26 @@ footer {
     width: auto;
 }
 
+.ihs-mission-pic{
+    padding-top: 50px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.ihs-para-1{
+    font-family: verdana;
+    font-size: small;
+    text-align: justify;
+}
+
+.ihs-breadcrumb-color{
+    //background-color: #D4E9FF;
+    background-color: #F2F8FF;
+}
+
+.ihs-thumbnail-color{
+    background-color: #F2F8FF;
+}
 .open > .dropdown-menu {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);  
