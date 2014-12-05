@@ -142,7 +142,7 @@ footer {
     max-height: 300px;
 }
 
-.ihs-para-1{
+.ihs-para-verdana{
     font-family: verdana;
     font-size: small;
     text-align: justify;
@@ -156,6 +156,7 @@ footer {
 .ihs-thumbnail-color{
     background-color: #F2F8FF;
 }
+
 .open > .dropdown-menu {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);  
@@ -163,7 +164,7 @@ footer {
 }
 
 
-.dropdown-menu {
+.dropdown-menu{
     display: block;
     opacity:.3;
     -webkit-transform-origin: top;
