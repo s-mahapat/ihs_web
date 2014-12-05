@@ -20,7 +20,7 @@
         <link href="css/ihs.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
-        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -29,17 +29,17 @@
 
     <body>
 
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8" id="ihs_container">
+        <div class="container" id="ihs_container">
 
-                <!-- Navigation -->
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="container">
+            <!-- Navigation -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="row">
+                    <div class="col-lg-12">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <a class="navbar-brand navbar-brand-ihs" href="#/home">
                                 <img src="images/IHSLogo.jpg" alt="IHS logo" id="ihslogo">
-                                <span style="display: block" id="ihs-logo-text">Institute of Health Systems</span>
+                                <!--<span style="display: block" id="ihs-logo-text">Institute of Health Systems</span>-->
                             </a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,15 +47,8 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown">
                                     <a href="#/about" class="dropdown-toggle" data-toggle="dropdown" role="button">About</a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li>
-                                            <a href="#/about/orgstructure">Organization and Structure</a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li class="dropdown">
-                                                    <a href="#/about/orgstructure">Organization and Structure</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                    <ul class="dropdown-menu multi-level" role="menu">
+                                        <li><a href="#/about/orgstructure">Organization and Structure</a></li>
                                         <li><a href="#/about/mission">Mission</a></li>
                                         <li><a href="#/about/vision">Vision</a></li>
                                         <li><a href="#">General Information</a></li>
@@ -79,7 +72,7 @@
                                 </li>
                                 <li class="dropdown">
                                     <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">Publications</a>
-                                    <ul class="dropdown-menu" role="menu">
+                                    <ul class="dropdown-menu multi-level" role="menu">
                                         <li><a href="#">Books</a></li>
                                         <li><a href="#">Reports</a></li>
                                         <li><a href="#">Working Papers</a></li>
@@ -96,30 +89,53 @@
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <form class="navbar-form navbar-right" role="search">
-                                <div class="form-group">
-                                    <input style="margin-top: -15px;" type="text" class="form-control input-sm" placeholder="Search">
-                                </div>
-                            </form>
-                        </div>
                         <!-- /.navbar-collapse -->
                     </div>
-                    <!-- /.container -->
-                </nav>
-                <div ng-view></div>
-                <hr>
-
-                <!-- Footer -->
-                <footer>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Copyright &copy; Your Website 2014</p>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4 id="ihs-logo-text">Institute of Health Systems</h4>
                     </div>
-                </footer>
+                    <div class="col-lg-offset-6 col-lg-2">
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input style="margin-right: 15px;" type="text" class="form-control input-sm" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </nav>
+            <div ng-view></div>
+            <hr>
 
-            </div>
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <a href="#">IHS Login</a>
+                        &nbsp;|&nbsp;
+                        <a href="#">Events Archive</a>
+                        &nbsp;|&nbsp;
+                        <a href="#">Projects Archive</a>
+                        &nbsp;|&nbsp;
+                        <a href="#">Track Record</a>
+                        &nbsp;|&nbsp;
+                        <a href="#">Site Map</a>
+                        &nbsp;|&nbsp;
+                        <a href="#">Careers</a>
+                        &nbsp;|&nbsp;
+                        <a href="#">Donate to IHS</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="">Copyright &copy; Institute of Health Systems 2014</p>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                </div>
+            </footer>
+
         </div>
 
         <!-- jQuery -->
