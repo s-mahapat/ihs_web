@@ -6,10 +6,7 @@
 
 
 var ihsApp = angular.module('ihs', ['ngRoute']);
-
-//'ngResource', 'datatables',
-//'patientControllers', 'ivory.services', 'searchControllers',
-// 'errorControllers' 
+ 
 ihsApp.config(function ($routeProvider) {
     $routeProvider.when('/home', {
         templateUrl: 'partials/home.html'
@@ -21,5 +18,19 @@ ihsApp.config(function ($routeProvider) {
         templateUrl: 'partials/vision.html'
     }).when('/about/orgstructure', {
         templateUrl: 'partials/orgstructure.html'
+    }).when('/project/archives', {
+        templateUrl: 'partials/project_archive.html'
+    }).when('/project/archive/burdenofdisease', {
+        templateUrl: 'partials/burden_of_disease.html'
     }).otherwise('/home');
 });
+
+ihsApp.value('constants', 
+    {'ihs_email': 'ihs@ihsnet.org.in'}
+);
+
+ihsApp.controller('mainController',
+    function($scope, constants){
+        $scope.ihs_email = constants.ihs_email; //'ihs@ihsnet.org.in';
+    }
+);
