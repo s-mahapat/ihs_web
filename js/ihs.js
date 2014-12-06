@@ -22,6 +22,8 @@ ihsApp.config(function ($routeProvider) {
         templateUrl: 'partials/project_archive.html'
     }).when('/project/archive/burdenofdisease', {
         templateUrl: 'partials/burden_of_disease.html'
+    }).when('/about/facultyprofiledetails', {
+        templateUrl: 'partials/faculty_profile_details.html'
     }).otherwise('/home');
 });
 
