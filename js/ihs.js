@@ -21,7 +21,7 @@ ihsApp.config(function ($routeProvider) {
         templateUrl: 'partials/vision.html'
     }).when('/about/orgstructure', {
         templateUrl: 'partials/orgstructure.html'
-    }).when('/about/faculty_profile_details', {
+    }).when('/about/facultyprofiledetails', {
         templateUrl: 'partials/faculty_profile_details.html'
     }).otherwise('/home');
 });

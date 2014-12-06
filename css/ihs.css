@@ -136,15 +136,12 @@ footer {
     max-height: 100px;
     height: auto;
     width: auto;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
 }
 
-.ihs-mission-pic{
-    padding-top: 50px;
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.ihs-para-1{
+.ihs-para{
     font-family: verdana;
     font-size: small;
     text-align: justify;
@@ -157,6 +154,7 @@ footer {
 
 .ihs-thumbnail-color{
     background-color: #F2F8FF;
+    //background-clip : url("/images/symphony.png");
 }
 
 /*.open > .dropdown-menu {
@@ -184,12 +182,9 @@ footer {
 }
 
 .ihs-home-pic{
-    width: 700px;
+    width: 900px;
     height: 350px;
 }
-
-/*
-*/
 
 .dropdown-submenu {
     position: relative;
