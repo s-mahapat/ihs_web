@@ -31,6 +31,6 @@ ihsApp.value('constants',
 
 ihsApp.controller('mainController',
     function($scope, constants){
-        $scope.ihs_email = constants.ihs_email; //'ihs@ihsnet.org.in';
+        $scope.ihs_email = constants.ihs_email;
     }
 );
