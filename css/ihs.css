@@ -71,7 +71,11 @@ header.carousel .fill {
 /* Footer Styles */
 
 footer {
-    margin: 50px 0;
+    /*margin: 50px 0;*/
+    margin: 20px 0;
+    color: #a9a9a9;
+    font-size: 0.9em;
+    text-decoration: none;
 }
 
 /* Responsive Styles */
@@ -93,19 +97,9 @@ footer {
     }
 }
 
-/*.navbar{
-    height: 85px;
-    border-color: white;
-    border-bottom-width: 2px;
-    border-style: solid;
-}*/
 
-.navbar-default{
-    margin-top: 10px;
-}
 
 #ihs_container{
-    margin-top: 20px;
     background-color: white;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -113,9 +107,10 @@ footer {
 }
 
 #ihslogo{
-    width: 70px;
-    height: 55px;
-    opacity: 1.0;
+    width: 75px;
+    height: 45px;
+    opacity: 0.9;
+    padding-top: 0px;
 }
 
 #ihs-logo-text{
@@ -123,12 +118,12 @@ footer {
     font-family: "Arial";
     color: rgb(255, 0, 0);
     color: hsl(0, 100%, 50%);
-    padding-top: 10px;
-    margin-left: 15px;
+    margin-left: 2px;
 }
 
 .navbar-brand-ihs{
     padding-top: 5px;
+    margin-bottom: 20px;
 }
 
 .ihs-profile-pic{
@@ -157,26 +152,6 @@ footer {
     //background-clip : url("/images/symphony.png");
 }
 
-/*.open > .dropdown-menu {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);  
-  opacity:1;
-}
-
-
-.dropdown-menu {
-    display: block;
-    opacity:.3;
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    -webkit-animation-fill-mode: forwards;  
-    animation-fill-mode: forwards; 
-    -webkit-transform: scale(1, 0);
-    display: block; 
-    transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-}*/
-
 .navbar{
     background-color: white;
 }
@@ -186,60 +161,6 @@ footer {
     height: 350px;
 }
 
-.dropdown-submenu {
-    position: relative;
-}
-
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
-
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
-}
-
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
-
-footer{
-    margin: 20px 0;
-    color: #a9a9a9;
-    font-size: 0.9em;
-    text-decoration: none;
-}
 
 footer a{
     text-decoration: none;
