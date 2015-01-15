@@ -166,3 +166,12 @@ footer a{
     text-decoration: none;
     color: #a9a9a9;
 }
+
+.ihs-aligntext-center{
+    text-align: center;
+}
+
+.ihs-table tr td{
+    font-family: verdana;
+    font-size: small;
+}

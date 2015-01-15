@@ -20,8 +20,12 @@ ihsApp.config(function ($routeProvider) {
         templateUrl: 'partials/orgstructure.html'
     }).when('/project/archives', {
         templateUrl: 'partials/project_archive.html'
-    }).when('/project/archive/burdenofdisease', {
-        templateUrl: 'partials/burden_of_disease.html'
+    }).when('/project/archive/apburdenofdiseasestudy', {
+        templateUrl: 'partials/AP_Burden_of_Disease_Study.html'
+    }).when('/project/archive/aphealthstatevaluationstudy', {
+        templateUrl: 'partials/AP_Health_State_Valuation_Study.html'
+        }).when('/project/archive/causeofdeath', {
+        templateUrl: 'partials/Cause_Of_Death.html'
     }).when('/about/facultyprofiledetails', {
         templateUrl: 'partials/faculty_profile_details.html'
     }).otherwise('/home');
