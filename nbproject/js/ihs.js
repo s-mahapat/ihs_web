@@ -70,8 +70,8 @@ ihsApp.config(function ($routeProvider) {
                 /*------------------------------*/
                 /* Burden of Disease and Socioeconomic Impact of HIV/AIDS */
                 /*------------------------------*/
-    }).when('/project/archive/bodsocioeconomicimpactofhivaids', {
-        templateUrl: 'partials/BOD_Socioeconomic_Impact_of_HIV_AIDS.html'
+    }).when('/project/archive/bodsocioeconomicimpact', {
+        templateUrl: 'partials/BOD_Socioeconomic_Impact.html'
 
                 /*------------------------------*/
                 /* Air Pollution and Cause of Deaths in Hyderabad */
