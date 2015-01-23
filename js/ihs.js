@@ -30,78 +30,78 @@ ihsApp.config(function ($routeProvider) {
                 /* AP BURDEN OF DISEASE STUDY */
                 /*------------------------------*/
     }).when('/project/archive/apburdenofdiseasestudy', {
-        templateUrl: 'partials/AP_Burden_of_Disease_Study.html'
+        templateUrl: 'partials/BOD/AP_Burden_of_Disease_Study.html'
 
                 /*------------------------------*/
                 /* AP HEALTH STATE VALUATION STUDY */
                 /*------------------------------*/
     }).when('/project/archive/aphealthstatevaluationstudy', {
-        templateUrl: 'partials/AP_Health_State_Valuation_Study.html'
+        templateUrl: 'partials/BOD/AP_Health_State_Valuation_Study.html'
 
                 /*------------------------------*/
                 /* CAUSE OF DEATH */
                 /*------------------------------*/
     }).when('/project/archive/causeofdeath', {
-        templateUrl: 'partials/Cause_Of_Death.html'
+        templateUrl: 'partials/BOD/Cause_Of_Death.html'
 
                 /*------------------------------*/
                 /* BOD TRAINING PROGRAMMES */
                 /*------------------------------*/
     }).when('/project/archive/bodtrainingprogrammes', {
-        templateUrl: 'partials/BOD_Training_Programmes.html'
+        templateUrl: 'partials/BOD/BOD_Training_Programmes.html'
 
                 /*------------------------------*/
                 /* DFHS */
                 /*------------------------------*/
     }).when('/project/archive/DFHS', {
-        templateUrl: 'partials/DFHS.html'
+        templateUrl: 'partials/BOD/DFHS.html'
 
                 /*------------------------------*/
                 /* INDOOR AIR POLLUTION */
                 /*------------------------------*/
     }).when('/project/archive/indoorairpollution', {
-        templateUrl: 'partials/Indoor_Air_Pollution.html'
+        templateUrl: 'partials/BOD/Indoor_Air_Pollution.html'
 
                 /*------------------------------*/
                 /* RTA */
                 /*------------------------------*/
     }).when('/project/archive/RTA', {
-        templateUrl: 'partials/RTA.html'
+        templateUrl: 'partials/BOD/RTA.html'
                 /*------------------------------*/
                 /* Burden of Disease and Socioeconomic Impact of HIV/AIDS */
                 /*------------------------------*/
     }).when('/project/archive/bodsocioeconomicimpactofhivaids', {
-        templateUrl: 'partials/BOD_Socioeconomic_Impact_of_HIV_AIDS.html'
+        templateUrl: 'partials/BOD/BOD_Socioeconomic_Impact_of_HIV_AIDS.html'
 
                 /*------------------------------*/
                 /* Air Pollution and Cause of Deaths in Hyderabad */
                 /*------------------------------*/
     }).when('/project/archive/airpollutionandcod', {
-        templateUrl: 'partials/Air_Pollution_COD.html'
+        templateUrl: 'partials/BOD/Air_Pollution_COD.html'
 
                 /*------------------------------*/
                 /*Technical Support for Verbal Autopsy*/
                 /*------------------------------*/
     }).when('/project/archive/technicalsupportforverbalautopsy', {
-        templateUrl: 'partials/Technical_Support_for_Verbal_Autopsy.html'
+        templateUrl: 'partials/BOD/Technical_Support_for_Verbal_Autopsy.html'
 
                 /*------------------------------*/
                 /*Cause of Death Coding for AP Rural Health Initiative*/
                 /*------------------------------*/
     }).when('/project/archive/codcoding', {
-        templateUrl: 'partials/COD_Coding.html'
+        templateUrl: 'partials/BOD/COD_Coding.html'
 
                 /*------------------------------*/
                 /*Health Effects of Air Pollution in Hyderabad*/
                 /*------------------------------*/
     }).when('/project/archive/healtheffectsofairpollution', {
-        templateUrl: 'partials/Health_Effects_Of_Air_Pollution.html'
+        templateUrl: 'partials/BOD/Health_Effects_Of_Air_Pollution.html'
 
                 /*------------------------------*/
                 /*Socioeconomic Impact of Asthma*/
                 /*------------------------------*/
     }).when('/project/archive/socioeconomicimpactofasthma', {
-        templateUrl: 'partials/Socioeconomic_Impact_of_Asthma.html'
+        templateUrl: 'partials/BOD/Socioeconomic_Impact_of_Asthma.html'
 
                 /*------------------------------*/
                 /*Faculty Profile Details*/
@@ -113,7 +113,19 @@ ihsApp.config(function ($routeProvider) {
                 /*National Burden of Disease Estimation Workshops*/
                 /*------------------------------*/
     }).when('/project/archive/nationalBODworkshops', {
-        templateUrl: 'partials/National_BOD_Estimation_Workshops.html'
+        templateUrl: 'partials/BOD/National_BOD_Estimation_Workshops.html'
+
+                /*------------------------------*/
+                /*Health System Performance Assessment*/
+                /*------------------------------*/
+    }).when('/HSPA', {
+        templateUrl: 'partials/HSPA/HSPA.html'
+
+                /*------------------------------*/
+                /*Others*/
+                /*------------------------------*/
+    }).when('/hspaprojects', {
+        templateUrl: 'partials/HSPA/HSPA_Projects.html'
 
                 /*------------------------------*/
                 /*Others*/
