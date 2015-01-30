@@ -9,7 +9,7 @@
 html,
 body {
     height: 100%;
-    background-color: #F4F4F4;
+    background-color: #555;
 }
 
 body {
@@ -78,39 +78,14 @@ footer {
     text-decoration: none;
 }
 
-/* Responsive Styles */
-
-@media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 70%;
-    }
-}
-
-
-
-#ihs_container{
-    background-color: white;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    width: 75%;
+.ihs-navbar-header{
+    padding-left: 30px;
+    width: 100%;
 }
 
 #ihslogo{
     width: 75px;
     height: 45px;
-    opacity: 0.9;
-    padding-top: 0px;
 }
 
 #ihs-logo-text{
@@ -118,12 +93,30 @@ footer {
     font-family: "Arial";
     color: rgb(255, 0, 0);
     color: hsl(0, 100%, 50%);
-    margin-left: 2px;
+    padding-left: 1px;
 }
 
+.ihs-navbar{
+    margin: auto;
+    width: 75%;
+    border-radius: 0;
+    background-color: white;
+}
+
+
+
+#ihs_container{
+    background-color: white;
+    -moz-border-radius: 10px;
+    border-radius: 0px;
+    width: 75%;
+}
+
+
+
 .navbar-brand-ihs{
-    padding-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 .ihs-profile-pic{
@@ -154,6 +147,12 @@ footer {
 
 .navbar{
     background-color: white;
+    background-image: none;
+    margin-bottom: 1px;
+}
+
+.navbar-nav li a{
+    color: #069!important;
 }
 
 .ihs-home-pic{
@@ -175,3 +174,38 @@ footer a{
     font-family: verdana;
     font-size: small;
 }
+/* Responsive Styles, should come always at the end */
+
+@media(max-width:1125px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+
+    .ihs-navbar{
+        font-size: smaller;
+    }
+
+    .navbar-nav li a{
+        padding: 5px;
+    }
+
+    .ihs-navbar-header{
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    #ihslogo{
+        width: 50px;
+        height: 30px;
+    }
+
+    #ihs-logo-text{
+        font-size: 12px;
+        font-family: "Arial";
+        color: rgb(255, 0, 0);
+        color: hsl(0, 100%, 50%);
+        padding-left: 1px;
+    }
+}
+
