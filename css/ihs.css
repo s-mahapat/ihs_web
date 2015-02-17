@@ -10,62 +10,7 @@ html,
 body {
     height: 100%;
     background-color: #555;
-}
-
-body {
-    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
-.img-portfolio {
-    margin-bottom: 30px;
-}
-
-.img-hover:hover {
-    opacity: 0.8;
-}
-
-/* Home Page Carousel */
-
-header.carousel {
-    height: 50%;
-}
-
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-    height: 100%;
-}
-
-header.carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-/* 404 Page Styles */
-
-.error-404 {
-    font-size: 100px;
-}
-
-/* Pricing Page Styles */
-
-.price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
-}
-
-.period {
-    display: block;
-    font-style: italic;
+    font-size: 14px;
 }
 
 /* Footer Styles */
@@ -80,13 +25,14 @@ footer {
 
 .ihs-navbar-header{
     padding-left: 30px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
+
 #ihslogo{
-    width: 75px;
-    height: 45px;
+    max-width: 80%;
 }
+
 
 #ihs-logo-text{
     font-size: 16px;
@@ -103,19 +49,14 @@ footer {
     background-color: white;
 }
 
-
-
 #ihs_container{
     background-color: white;
-    -moz-border-radius: 10px;
+    -moz-border-radius: 0px;
     border-radius: 0px;
     width: 75%;
 }
 
-
-
 .navbar-brand-ihs{
-    margin-bottom: 0px;
     margin-top: 5px;
 }
 
@@ -130,8 +71,6 @@ footer {
 }
 
 .ihs-para{
-    font-family: verdana;
-    font-size: small;
     text-align: justify;
 }
 
@@ -155,11 +94,6 @@ footer {
     color: #069!important;
 }
 
-.ihs-home-pic{
-    width: 900px;
-    height: 350px;
-}
-
 
 footer a{
     text-decoration: none;
@@ -174,15 +108,40 @@ footer a{
     font-family: verdana;
     font-size: small;
 }
+
+
 /* Responsive Styles, should come always at the end */
 
-@media(max-width:1125px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
+@media(max-width:1200px){
+    #ihs_container{
+        width: 100%;
     }
-
+    
     .ihs-navbar{
+        width: 100%;
+    }
+}
+
+@media(max-width:992px) {
+
+    
+    body{
+        font-size: 0.95rem
+    }
+    
+    
+    
+    .navbar-nav li a{
+        padding: 10px;
+    }
+}
+
+@media(max-width:768px) {
+
+    body{
+        font-size: 0.9rem
+    }
+    /*.ihs-navbar{
         font-size: smaller;
     }
 
@@ -192,20 +151,11 @@ footer a{
 
     .ihs-navbar-header{
         padding-left: 15px;
-        width: 100%;
-    }
-
-    #ihslogo{
-        width: 50px;
-        height: 30px;
     }
 
     #ihs-logo-text{
         font-size: 12px;
-        font-family: "Arial";
-        color: rgb(255, 0, 0);
-        color: hsl(0, 100%, 50%);
-        padding-left: 1px;
-    }
+    }*/
 }
+
 
