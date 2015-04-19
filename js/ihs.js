@@ -2,27 +2,21 @@ var ihsApp = angular.module('ihs', ['ngRoute']);
 
 ihsApp.config(function ($routeProvider) {
 
-    /*------------------------------*/
-    /* HOME */
-    /*------------------------------*/
+    //home
     $routeProvider.when('/home', {
         templateUrl: 'partials/home.html'
 
-                /*------------------------------*/
-                /* ABOUT */
-                /*------------------------------*/
+    // about
     }).when('/about', {
         templateUrl: 'partials/about.html'
 
-                /*------------------------------*/
-                /* ORGANIZATION STRUCTURE */
-                /*------------------------------*/
+    // about->orgstructure
     }).when('/about/orgstructure', {
         templateUrl: 'partials/orgstructure.html'
-
-                /*------------------------------*/
-                /* PROJECT ARCHIVE */
-                /*------------------------------*/
+    
+    // about->reachus
+    }).when('/about/reachus', {
+        templateUrl: 'partials/reachus.html'
     }).when('/project/archives', {
         templateUrl: 'partials/project_archive.html'
 

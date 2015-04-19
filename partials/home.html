@@ -1,53 +1,73 @@
 
 <!-- Header Carousel -->
-    
-    <!-- Page Content -->
-    <div class="">
-        
-        <!-- Carousel -->
-        <div class="row">
-            <div class="col-sm-8 hidden-xs">
-                <img class="img-responsive img-rounded ihs-home-pic" src="images/ihs_lab.jpg" alt="IHS lab">
-            </div>
-            <!-- remove the image on mobile devices -->
-            <div class="col-xs-offset-4 col-xs-8 col-sm-offset-0 col-sm-4">
-                <address>
-                    <h4>The Institute of Health Systems</h4>
-                    HACA Bhavan<br>
-                    Hyderabad - 500 004<br>
-                    Andhra Pradesh, India
-                    <hr>
-                    <i title="Primary Phone" class="fa fa-phone fa-lg"></i> +91- 40- 23210136/9<br><br>
-                    <i title="Alternate Phone" class="fa fa-phone fa-lg"></i> +91- 40- 23211013/4<br><br>
-                    <i title="Fax" class="fa fa-fax fa-lg"></i> +91- 40- 23241567<br><br>
-                    <span class="glyphicon glyphicon-envelope"></span><a href="mailto:{{ihs_email}}"> {{ihs_email}}</a>
-                </address>
-            </div>
-        </div>
-        <hr>
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Water Safety - Hyderabad</h4>
-                <p class="ihs-para">The IHS has been contributing to the WSP(Water Safety Plan) by organizing expert group meetings and providing inputs for development of health based targets. The Director, IHS serves on the Steering Committee on Water Safety Plans and Saritha K, Head, WQTS, IHS serves on Task Force for Monitoring implementation of Water Safety Plans constituted by the HMWSSB.</p>
-            </div>
-            <div class="col-md-4">
-                <h4>Water Quality Lab</h4>
-                <p class="ihs-para">Protecting public health by easily accessible tests of water quality. Services include, basic & complete potability tests, bacteriological analysis, ground water potability & specified single or multiple parameter tests. The lab provides independent water quality monitoring of water in identified slum areas supplied by the Hyderabad Metro Water Supply & Sewerage Board</p>
-            </div>
-            <div class="col-md-4">
-                <h4>Resources</h4>
-                <p class="ihs-para"></p>
+
+<!-- Page Content -->
+<div class="">
+
+    <!-- Carousel -->
+    <div class="row">
+        <div class="col-sm-8">
+            <div id="carousel-example-generic" class="carousel slide ihs-carousel" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div style="background:url(images/ihs_lab.jpg) center center; 
+                             background-size:cover;" class="slider-size"></div>
+                        <div class="carousel-caption">
+                            Water Quality Lab
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div style="background:url(images/ihs_lab2.jpg) center center; 
+                             background-size:cover;" class="slider-size"></div>
+                        <div class="carousel-caption">
+                            Water Quality Lab
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- /.row -->
+        <div class="col-sm-4">
+            <div class="contemporary-links">
+                <h5>Contemporary Links</h5>
+                <ul>
+                    <li><a href="#/project/archive/apburdenofdiseasestudy">Andhra Pradesh Burden of Disease</a></li>
+                    <li><a href="#/hspaprojects">Projects on Health System Performance Assessment</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-        
-        
-      
-<!-- Script to Activate the Carousel -->
+    <hr>
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Water Safety - Hyderabad</h4>
+            <p class="ihs-para">The IHS has been contributing to the WSP(Water Safety Plan) by organizing expert group meetings and providing inputs for development of health based targets. The Director, IHS serves on the Steering Committee on Water Safety Plans and Saritha K, Head, WQTS, IHS serves on Task Force for Monitoring implementation of Water Safety Plans constituted by the HMWSSB.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Water Quality Lab</h4>
+            <p class="ihs-para">Protecting public health by easily accessible tests of water quality. Services include, basic & complete potability tests, bacteriological analysis, ground water potability & specified single or multiple parameter tests. The lab provides independent water quality monitoring of water in identified slum areas supplied by the Hyderabad Metro Water Supply & Sewerage Board</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Resources</h4>
+            <p class="ihs-para"></p>
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+
+
+    <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    });
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        });
     </script>

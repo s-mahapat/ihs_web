@@ -9,8 +9,25 @@
 html,
 body {
     height: 100%;
-    background-color: #555;
+    background-color: #fafafa;
     font-size: 14px;
+    font-family: arial, sans-serif;
+    color: rgb(85, 85, 85);
+    font-stretch: normal;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+h4{
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
 }
 
 /* Footer Styles */
@@ -23,14 +40,10 @@ footer {
     text-decoration: none;
 }
 
-.ihs-navbar-header{
-    padding-left: 30px;
-    /*width: 100%;*/
-}
-
 
 #ihslogo{
-    max-width: 80%;
+    max-height: 50px;
+    opacity: 0.9;
 }
 
 
@@ -39,21 +52,29 @@ footer {
     font-family: "Arial";
     color: rgb(255, 0, 0);
     color: hsl(0, 100%, 50%);
-    padding-left: 1px;
+    margin-left: 70px;
+    position: relative;
+    margin-top: -20px;
+}
+
+.ihs_navbar_container{
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ihs-navbar{
-    margin: auto;
-    width: 75%;
-    border-radius: 0;
-    background-color: white;
+    margin: 0px 0px;
 }
 
-#ihs_container{
+.ihs_container{
     background-color: white;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    width: 75%;
+    max-width: 98%;
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #E9E9E9;
+    padding: 15px;
 }
 
 .navbar-brand-ihs{
@@ -70,6 +91,12 @@ footer {
     border-width: 2px;
 }
 
+.slider-size {
+    height: 400px; /* This is your slider height */
+    border-radius: 10px;
+}
+
+
 .ihs-para{
     text-align: justify;
 }
@@ -85,13 +112,17 @@ footer {
 }
 
 .navbar{
-    background-color: white;
-    background-image: none;
-    margin-bottom: 1px;
+    background-color: transparent;
+    border-radius: 0px;
 }
 
 .navbar-nav li a{
-    color: #069!important;
+    color: #555!important;
+}
+
+.navbar-right {
+    float: right!important;
+    margin-right: 0px;
 }
 
 
@@ -109,53 +140,100 @@ footer a{
     font-size: small;
 }
 
-
-/* Responsive Styles, should come always at the end */
-
-@media(max-width:1200px){
-    #ihs_container{
-        width: 100%;
-    }
-    
-    .ihs-navbar{
-        width: 100%;
-    }
+.readmore_container{
+    width: 100%;
 }
 
-@media(max-width:992px) {
+.readmore{
+    background-color: #51a2c1;
+    float: right;
+    border: #fafafa solid thin;
+    padding: 5px;
+    margin-right: 15px;
+    color: white;
+    font-size: smaller;
+    cursor: pointer;
+    
+}
 
+.readmore a:link{
+    color: white;
+    text-decoration: none;
+}
+
+
+.readmore:hover{
+    background-color: gray;
+    color: white;
+}
+
+.ihs-img-thumbnail{
+    max-height: 200px;
+    float: left;
+    margin-right: 15px;
+    border: #ddd solid thin;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contemporary-links {
+    border-left: #ddd thin solid;
+    padding-left: 30px;
+    height: 380px;
+}
+
+.contemporary-links ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contemporary-links ul li{
+    padding: 10px 0px;
+}
+
+
+/* Responsive Styles, should come always at the end */ 
+
+@media(max-width:1100px){
     
-    body{
-        font-size: 0.95rem
+    .navbar-collapse{
+        margin: auto;
+        float: none!important;
     }
     
-    
-    
-    .navbar-nav li a{
-        padding: 10px;
+    .nav>li>a{
+        padding: 10px 10px;
     }
+
+ 
+
+
 }
 
 @media(max-width:768px) {
 
-    body{
-        font-size: 0.9rem
+    .ihs_container{
+        max-width: 100%;
     }
-    /*.ihs-navbar{
-        font-size: smaller;
-    }
-
-    .navbar-nav li a{
-        padding: 5px;
+    
+    .ihs_navbar_container{
+        max-width: 100%;
     }
 
-    .ihs-navbar-header{
-        padding-left: 15px;
+    .ihs-navbar{
+        max-width: 100%;
     }
 
-    #ihs-logo-text{
-        font-size: 12px;
-    }*/
+    #ihslogo{
+        margin-left: 5px;
+
+    }
+    
+    .ihs-img-thumbnail{
+        max-height: 100px;
+    }
+
 }
 
 
