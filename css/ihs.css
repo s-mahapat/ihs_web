@@ -175,6 +175,10 @@ footer a{
     height: 300px;
 }
 
+iframe, object, embed{
+    max-width: 100%;
+}
+
 .ihs-tile-panel{
     border-top: 4px solid #4384c4;
     box-shadow: 5px 5px 5px lightgray;
@@ -188,24 +192,14 @@ footer a{
 /* Responsive Styles, should come always at the end */ 
 
 @media(max-width:1100px){
-    
-    .contemporary-links{
-        padding-left: 0px;
-        border: none;
-        height: auto;
-    }
-    
-    .contemporary-links ul li{
-        padding: 5px 0px;
-    }
 
+    .ihs-jumbotron{
+        padding-left: 0px;
+        padding-bottom: 5px;
+    }
 }
 
 @media(max-width:768px) {
-
-    .ihs_container{
-        max-width: 100%;
-    }
     
     .ihs-img-thumbnail{
         max-height: 100px;
