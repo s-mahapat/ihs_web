@@ -1,6 +1,6 @@
 var ihsApp = angular.module('ihs', ['ngRoute']);
 
-ihsApp.config(function ($routeProvider) {
+ihsApp.config(function ($routeProvider, $locationProvider) {
 
     //home
     $routeProvider.when('/home', {
@@ -125,6 +125,8 @@ ihsApp.config(function ($routeProvider) {
                 /*Others*/
                 /*------------------------------*/
     }).otherwise('/home');
+    
+    $locationProvider.html5Mode(true);
 });
 
 ihsApp.value('constants',
