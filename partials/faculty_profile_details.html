@@ -15,7 +15,7 @@
 
     <!-- Mr. G. Surendra-->
     <A name="anchor-surendra"></A>
-    <div class="row">
+    <div class="row" id="profile-surendra">
         <div class="col-md-3 text-center">
             <div class="thumbnail ihs-thumbnail-color">
                 <img class="img-responsive ihs-profile-pic" src="images/surendra.jpg" alt="">
@@ -58,8 +58,8 @@
     <hr>
 
     <!-- Dr. Prasanta Mahapatra -->
-    <A name="anchor-Mahapatra"></A>
-    <div class="col-md-3 text-center">
+    <A class="" name="anchor-Mahapatra"></A>
+    <div class="col-md-3 text-center anchor" id="profile-mahapatra">
         <div class="thumbnail ihs-thumbnail-color">
             <img class="img-responsive ihs-profile-pic" src="images/Mahapatra.jpg" alt="Mahapatra's Image">
             <div class="caption">
@@ -433,3 +433,20 @@
     <br><br><br><br><br><br><br><br><br>
     <hr>
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('html, body').hide();
+
+        if (window.location.hash) {
+            setTimeout(function() {
+                $('html, body').scrollTop(0).show();
+                $('html, body').animate({
+                    scrollTop: $(window.location.hash).offset().top - 100
+                    }, 1000);
+            }, 0);
+        }
+        else {
+            $('html, body').show();
+        }
+    });
+</script>

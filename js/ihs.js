@@ -6,15 +6,15 @@ ihsApp.config(function ($routeProvider, $locationProvider) {
     $routeProvider.when('/home', {
         templateUrl: 'partials/home.html'
 
-    // about
+                // about
     }).when('/about', {
         templateUrl: 'partials/about.html'
 
-    // about->orgstructure
+                // about->orgstructure
     }).when('/about/orgstructure', {
         templateUrl: 'partials/orgstructure.html'
-    
-    // about->reachus
+
+                // about->reachus
     }).when('/about/reachus', {
         templateUrl: 'partials/reachus.html'
     }).when('/project/archives', {
@@ -125,7 +125,7 @@ ihsApp.config(function ($routeProvider, $locationProvider) {
                 /*Others*/
                 /*------------------------------*/
     }).otherwise('/home');
-    
+
     $locationProvider.html5Mode(true);
 });
 
@@ -134,7 +134,22 @@ ihsApp.value('constants',
 );
 
 ihsApp.controller('mainController',
-        function ($scope, constants) {
+        function ($scope, $location, $anchorScroll, $timeout, constants) {
             $scope.ihs_email = constants.ihs_email;
+
+            $scope.scrollToProfile = function (id) {
+                var old = $location.hash();
+                $location.url('about/facultyprofiledetails#' + id);
+                
+                /*$timeout(function () {
+                    $location.hash(id);
+                    //this will make anchorScroll scroll to the div minus 50px
+                    $anchorScroll.yOffset = 100;
+                    $anchorScroll();
+                }, 00);
+                
+                //reset to old to keep any additional routing logic from kicking in
+                $location.hash(old);*/
+            };
         }
 );

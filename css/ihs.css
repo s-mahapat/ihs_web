@@ -9,10 +9,9 @@
 html,
 body {
     height: 100%;
-    width: 95%;
-    margin: auto;
-    background-color: white;/*#fafafa;*/
-    font-family: Helvetica, arial, sans-serif;
+    background-color: white;
+    /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-family: "Helvetica Neue", Helvetica, arial, sans-serif;*/
     color: rgb(85, 85, 85);
     font-stretch: normal;
     -webkit-font-smoothing: antialiased;
@@ -23,6 +22,54 @@ body {
     font-stretch: normal;
 }
 
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+body {
+    padding-top: 85px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. Change the navbar height also */
+}
+
+.ihs-container{
+    margin-top: 0px;
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
 h4{
     font-family: 'PT Sans', sans-serif;
     color: rgb(108, 108, 108);
@@ -30,14 +77,37 @@ h4{
     font-weight: bold;
 }
 
+.navbar{
+    min-height: 85px;
+}
+
+.navbar-brand{
+    padding: 5px 0px 0px 0px;
+}
+
+.ihs-carousel{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.breadcrumb{
+    margin-top: 10px;
+}
+
 /* Footer Styles */
 
 footer {
     /*margin: 50px 0;*/
-    margin: 20px 0;
-    color: #a9a9a9;
-    font-size: 0.9em;
     text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: #a9a9a9;
 }
 
 #ihslogo{
@@ -49,8 +119,16 @@ footer {
 }
 
 .ihslogo-container{
-    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
+
+.black-header{
+    min-height: 5px;
+    background-color: black;
+}
+
+
 
 .ihslogo-container a{
     display: table-cell;
@@ -63,7 +141,6 @@ footer {
     color: hsl(0, 100%, 50%);
     display: table-cell;
     vertical-align: bottom;
-    padding-left: 5px;
 }
 
 .navbar-nav.nav-justified > li{
@@ -71,22 +148,15 @@ footer {
 }
 
 .navbar-nav.nav-justified > li > a{
-    
-}
 
-.ihs_container{
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .ihs-profile-pic{
-    max-width: 100px;
-    max-height: 100px;
-    height: auto;
-    width: auto;
-    border-style: solid;
-    border-color: grey;
-    border-width: 2px;
+    max-width: 105px;
+    max-height: 137px;
+    min-height: 105px;
+    min-width: 137px;
+    border-style: none;
 }
 
 .slider-size {
@@ -94,22 +164,17 @@ footer {
 }
 
 .ihs-para{
-    text-align: justify;
+    font-size: 14px;
+    line-height: 32px;
+    color: #686868;
 }
 
 .ihs-breadcrumb-color{
-    //background-color: #D4E9FF;
     background-color: #F2F8FF;
 }
 
 .ihs-thumbnail-color{
     background-color: #F2F8FF;
-    //background-clip : url("/images/symphony.png");
-}
-
-footer a{
-    text-decoration: none;
-    color: #a9a9a9;
 }
 
 .ihs-aligntext-center{
@@ -132,7 +197,7 @@ footer a{
 }
 
 .ihs-clearfix{
- clear: both;   
+    clear: both;   
 }
 
 .readmore a:link{
@@ -189,6 +254,38 @@ iframe, object, embed{
     padding-top: 0px;
 }
 
+.navbar{
+    border-color: white;
+}
+
+.navbar-default{
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: white;
+}
+
+.text-primary {
+    color: orangered;/*#fed136;*/
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+.text-muted {
+    color: #777777;
+}
+
+.anchor:before {
+  content:"";
+  display:block;
+  height:95px; /* fixed header height*/
+  margin:-95px 0 0; /* negative fixed header height */
+}
+
+
 /* Responsive Styles, should come always at the end */ 
 
 @media(max-width:1100px){
@@ -200,11 +297,28 @@ iframe, object, embed{
 }
 
 @media(max-width:768px) {
-    
+
     .ihs-img-thumbnail{
         max-height: 100px;
     }
 
 }
 
+/* Responsive Styles */
 
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
