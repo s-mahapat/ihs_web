@@ -188,7 +188,6 @@ footer a{
 
 .readmore{
     background-color: orangered;
-    float: right;
     border: solid thin;
     padding: 5px;
     color: white;
@@ -278,11 +277,8 @@ iframe, object, embed{
     color: #777777;
 }
 
-.anchor:before {
-  content:"";
-  display:block;
-  height:95px; /* fixed header height*/
-  margin:-95px 0 0; /* negative fixed header height */
+.home-contents{
+    margin-top: 400px;
 }
 
 
@@ -296,13 +292,7 @@ iframe, object, embed{
     }
 }
 
-@media(max-width:768px) {
 
-    .ihs-img-thumbnail{
-        max-height: 100px;
-    }
-
-}
 
 /* Responsive Styles */
 
@@ -313,6 +303,14 @@ iframe, object, embed{
     }
 }
 
+@media(max-width:768px) {
+
+    .ihs-img-thumbnail{
+        max-height: 100px;
+    }
+
+}
+
 @media(max-width:767px) {
     .img-portfolio {
         margin-bottom: 15px;
@@ -320,5 +318,9 @@ iframe, object, embed{
 
     header.carousel .carousel {
         height: 70%;
+    }
+
+    .home-contents{
+        margin-top: 200px;
     }
 }
