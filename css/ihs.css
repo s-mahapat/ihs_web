@@ -82,7 +82,7 @@ h4{
 }
 
 .navbar-brand{
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0px 0px 5px;
 }
 
 .ihs-carousel{
@@ -301,17 +301,19 @@ iframe, object, embed{
     .img-related {
         margin-bottom: 30px;
     }
+    
+    .home-contents{
+        margin-top: 650px;
+    }
 }
 
-@media(max-width:768px) {
 
+@media(max-width:767px) {
+    
     .ihs-img-thumbnail{
         max-height: 100px;
     }
-
-}
-
-@media(max-width:767px) {
+    
     .img-portfolio {
         margin-bottom: 15px;
     }
@@ -324,3 +326,11 @@ iframe, object, embed{
         margin-top: 200px;
     }
 }
+@media(max-height:767px) {
+
+    .home-contents{
+        margin-top: 350px;
+    }
+}
+
+
