@@ -5,6 +5,7 @@ ihsApp.config(function ($routeProvider, $locationProvider) {
     //home
     $routeProvider.when('/home', {
         templateUrl: 'partials/home.html'
+                //controller: 'HomeController'
 
                 // about
     }).when('/about', {
@@ -135,21 +136,28 @@ ihsApp.value('constants',
 
 ihsApp.controller('mainController',
         function ($scope, $location, $anchorScroll, $timeout, constants) {
+
+            //$scope.isHome = false;
             $scope.ihs_email = constants.ihs_email;
 
             $scope.scrollToProfile = function (id) {
                 var old = $location.hash();
                 $location.url('about/facultyprofiledetails#' + id);
-                
-                /*$timeout(function () {
-                    $location.hash(id);
-                    //this will make anchorScroll scroll to the div minus 50px
-                    $anchorScroll.yOffset = 100;
-                    $anchorScroll();
-                }, 00);
-                
-                //reset to old to keep any additional routing logic from kicking in
-                $location.hash(old);*/
+
             };
+
+
         }
 );
+
+ihsApp.controller('HomeController', ['$scope', '$location', '$route', function ($scope, $location, $route) {
+        
+        // watch for location changes, if home then only show the carousel
+        $scope.$on("$routeChangeSuccess", function (event, current, previous) {
+            path = $location.path();
+            $scope.isHome = false;
+            if(path === "/home")
+                $scope.isHome = true;
+        });
+        
+    }]);

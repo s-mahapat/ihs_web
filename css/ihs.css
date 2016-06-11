@@ -52,7 +52,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+    height: 100%;
 }
 
 
@@ -86,12 +86,9 @@ h4{
 }
 
 .ihs-carousel{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    height: 400px;
+    max-height: 400px;
+    width: 100%;    
 }
 
 .breadcrumb{
@@ -277,10 +274,6 @@ iframe, object, embed{
     color: #777777;
 }
 
-.home-contents{
-    margin-top: 400px;
-}
-
 
 /* Responsive Styles, should come always at the end */ 
 
@@ -301,10 +294,6 @@ iframe, object, embed{
     .img-related {
         margin-bottom: 30px;
     }
-    
-    .home-contents{
-        margin-top: 650px;
-    }
 }
 
 
@@ -316,20 +305,6 @@ iframe, object, embed{
     
     .img-portfolio {
         margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 70%;
-    }
-
-    .home-contents{
-        margin-top: 200px;
-    }
-}
-@media(max-height:767px) {
-
-    .home-contents{
-        margin-top: 350px;
     }
 }
 
