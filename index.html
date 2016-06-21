@@ -103,7 +103,7 @@
         </nav>
         <!-- Header Carousel -->
         <!-- Header Carousel -->
-        <div class="ihs-carousel" ng-show="isHome" ng-controller="HomeController">
+        <div class="ihs-carousel" ng-init="isHome=false" ng-show="isHome" ng-controller="HomeController">
             <header id="myCarousel" class="carousel slide">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -133,19 +133,11 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Controls 
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="icon-prev"></span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="icon-next"></span>
-                </a>-->
             </header>
         </div>
 
-        <div class="container">
-            <div class="container" ng-view ng-controller="mainController">
+        <div class="container ihs-container">
+            <div class="container ihs-container" ng-view ng-controller="mainController">
                 <!-- partial pages are rendered here -->
             </div>
             <footer>
@@ -164,6 +156,8 @@
                         <a href="#">Careers</a>
                         &nbsp;|&nbsp;
                         <a href="#">Donate to IHS</a>
+                        &nbsp;|&nbsp;
+                        <a href="/about/reachus">Reach Us</a>
                     </div>
                     <div class="col-lg-4">
                         <p class="pull-right">Copyright &copy; Institute of Health Systems 2014</p>
