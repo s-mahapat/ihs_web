@@ -126,14 +126,21 @@ ihsApp.config(function ($routeProvider, $locationProvider, $compileProvider) {
                 /*Others*/
                 /*------------------------------*/
     }).otherwise('/home');
-    
+
     $compileProvider.debugInfoEnabled(false);
 
     $locationProvider.html5Mode(true);
 });
 
 ihsApp.value('constants',
-        {'ihs_email': 'ihs@ihsnet.org.in'}
+        {   'ihs_email': 'ihs@ihsnet.org.in',
+            'ihs_address_1': 'HACA Bhavan',
+            'ihs_address_2': 'Hyderabad - 500 004',
+            'ihs_address_3': 'Andhra Pradesh, India',
+            'ihs_primary_phone': '+91- 40- 23210136/9',
+            'ihs_alt_phone': '+91- 40- 23211013/4',
+            'ihs_fax': '+91- 40- 23241567'
+        }
 );
 
 ihsApp.controller('mainController',
@@ -141,7 +148,7 @@ ihsApp.controller('mainController',
 
             //$scope.isHome = false;
             $scope.ihs_email = constants.ihs_email;
-
+            
             $scope.scrollToProfile = function (id) {
                 var old = $location.hash();
                 $location.url('about/facultyprofiledetails#' + id);
@@ -153,13 +160,20 @@ ihsApp.controller('mainController',
 );
 
 ihsApp.controller('HomeController', ['$scope', '$location', '$route', function ($scope, $location, $route) {
-        
+
         // watch for location changes, if home then only show the carousel
         $scope.$on("$routeChangeSuccess", function (event, current, previous) {
             path = $location.path();
             $scope.isHome = false;
-            if(path === "/home")
+            if (path === "/home")
                 $scope.isHome = true;
         });
-        
+
     }]);
+
+ihsApp.controller('FooterController', ['$scope', 'constants', function($scope, constants){
+        $scope.ihs_email = constants.ihs_email;
+        $scope.address = [constants.ihs_address_1, constants.ihs_address_2, constants.ihs_address_3];
+        $scope.phones = [constants.ihs_primary_phone];
+
+}]);
